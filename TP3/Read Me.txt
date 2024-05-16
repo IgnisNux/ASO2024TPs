@@ -1,0 +1,20 @@
+1a) en cuanto al archivo "Sin Hilos"
+Cada vez es mas rapido, o al menos en todos los intentos que realice, cada intento era mas rapido que el anterior
+sin embargo, el resultado es predecible, y siempre hace lo mismo, supongo que la repeticion de una misma tarea hace
+que la ram la tenga mas presente y por eso lo completa cada vez mas rapido, pues ahora que me detuve a escribir esto
+volvi a ejecutar el archivo, y tardo un poco mas que el ultimo intento, pero sigue siendo mas rapido que la mayoria
+de los otros intentos, el tiempo mas rapido que consegui fue 6,98323 segundos
+en cuanto al archivo "Con Hilos"
+la diferencia de tiempo es de aproximadamente el 80%, pues en lugar de terminar en un promedio de 7 segundos, termina en
+un promedio de 4 segundos, sin embargo, a diferencia del primer archivo, las 3 tareas del archivo terminan en un orden
+diferente, siendo que termina primero la tarea 2 que la tarea 1, el tiempo mas rapido que consegui fue de 4,02709
+curiosamente, las primeras veces que ejecute el programa era cada vez mas lento, pero luego de escribir esto y volver
+a intentarlo, empezo a tirar tiempos aleatorios, uno mas alto que otro, uno mas bajo que otro, manteniendo un promedio
+que no parece verse afectado por la repeticion de la tarea en un corto periodo de tiempo
+1b) Si y no, el archivo Sin Hilos era considerablemente diferente, pues mientras que el mio tenia 7 segundos
+el suyo tenia 5,2 segundos de tiempo, mientras que el archivo Con hilos era igual, ambos teniamos un tiempo
+estimado de 4 segundos y bastante cercano
+1c) No paso absolutamente nada, el resultado seguia siendo el mismo (0), y el tiempo promedio seguia siendo el mismo
+(0,1 segundo), y esto es porque los comentarios en el codigo no implican ningun cambio al mismo, no se ejecutan
+simplemente son un mensaje dejado por el programador para otros programadores que esten intentando entender el codigo
+en cuestion, siendo irrelevante para el programa si el codigo contiene comentarios o no dentro
