@@ -15,6 +15,10 @@ que no parece verse afectado por la repeticion de la tarea en un corto periodo d
 el suyo tenia 5,2 segundos de tiempo, mientras que el archivo Con hilos era igual, ambos teniamos un tiempo
 estimado de 4 segundos y bastante cercano
 1c) No paso absolutamente nada, el resultado seguia siendo el mismo (0), y el tiempo promedio seguia siendo el mismo
-(0,1 segundo), y esto es porque los comentarios en el codigo no implican ningun cambio al mismo, no se ejecutan
-simplemente son un mensaje dejado por el programador para otros programadores que esten intentando entender el codigo
-en cuestion, siendo irrelevante para el programa si el codigo contiene comentarios o no dentro
+(0,1 segundo), si bien es cierto, la race condition y la zona critica en la que se encuentran ambos hilos influye en
+el resultado final, debido a que teoricamente en algun momento pueden fallar al tratar de usar ambos hilos el mismo
+recurso al mismo tiempo y dar un resultado distinto de 0, en mi caso no me ha dado un resultado diferente, 
+los comentarios en el codigo no implican ningun cambio al mismo, no se ejecutan, sin embargo
+decrementan la posibilidad de que exista un fallo en la race condition al dejar un espacio de lectura entre
+ambos hilos del programa, pues es bastante probable que el primer hilo ya haya terminado mientras el programa
+este leyendo el comentario e identificandolo como tal antes de ejecutar el hilo siguiente
